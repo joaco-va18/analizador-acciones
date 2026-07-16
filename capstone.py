@@ -30,7 +30,7 @@ with open("informe.txt", "w") as f:
     f.write(f"Análisis de MSFT - período: 10 años\n")
     f.write(f"Volatilidad anual {round(vol_anual * 100, 4)}%\n")
     f.write(f"Retorno total: {rendimiento * 100}%\n")
-    f.write(f"Maximo DrawDown: {max_dd}\n")
+    f.write(f"Maximo DrawDown: {round(max_dd * 100, 4)}\n")
     f.write(f"La correlacion con el SPY: {round(correlacion, 4)}\n")
 plt.savefig("histogram.png")
 plt.show()
