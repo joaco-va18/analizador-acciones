@@ -17,12 +17,13 @@ Es una herramienta de Python que analiza el riesgo, la correlación y el retorno
 - Para analizar otra acción o período: cambiar el ticker y el `period` en las llamadas a `yf.download`
 
 ## Ejemplo de output (MSFT, 10 años)
+```
 Análisis de MSFT - período: 10 años
 Volatilidad anual 27.1921%
 Retorno total: 725.4874%
 Maximo DrawDown: -37.1485%
 La correlacion con el SPY: 0.7698
-
+```
 ![Histograma de retornos vs normal](histogram.png)
 
 ## Nota
