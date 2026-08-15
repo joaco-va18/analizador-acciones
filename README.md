@@ -9,7 +9,7 @@ Es una herramienta de Python que analiza el riesgo, la correlación y el retorno
 - La correlación con el S&P 500 (SPY)
 - Nos da un histograma de retornos reales vs distribución normal
 - Genera un informe de texto y un gráfico
-- Muestra la volatilidad rolling que qmuestra como varia el riesgo a lo largo del tiempo con una ventana fija de 20 dias
+- Muestra la volatilidad rolling que muestra como varia el riesgo a lo largo del tiempo con una ventana fija de 20 dias
 
 ## Cómo usarlo
 - Requisitos: Python + las librerías que se usan: numpy, pandas, matplotlib, yfinance
