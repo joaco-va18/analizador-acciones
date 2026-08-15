@@ -1,5 +1,6 @@
 Análisis de MSFT - período: 10 años
-Volatilidad anual 27.6317%
-Retorno total: 866.9645%
+Volatilidad anual 27.6265%
+Volatilidad rolling actual (20 días): 57.5602%
+Retorno total: 864.0844%
 Maximo DrawDown: -37.1485%
 La correlacion con el SPY: 0.7628

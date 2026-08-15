@@ -31,6 +31,7 @@ plt.hist(normal, bins=100, density=True, alpha=0.5)
 with open("informe.txt", "w") as f:
     f.write(f"Análisis de MSFT - período: 10 años\n")
     f.write(f"Volatilidad anual {round(vol_anual * 100, 4)}%\n")
+    f.write(f"Volatilidad rolling actual (20 días): {round(vol_roll_a.iloc[-1] * 100, 4)}%\n")
     f.write(f"Retorno total: {round(rendimiento * 100, 4)}%\n")
     f.write(f"Maximo DrawDown: {round(max_dd * 100, 4)}%\n")
     f.write(f"La correlacion con el SPY: {round(correlacion, 4)}\n")
