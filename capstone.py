@@ -20,6 +20,7 @@ running_max = np.maximum.accumulate(precios)
 drawdown = (precios - running_max) / running_max
 max_dd = drawdown.min()
 print("El mayor caida fue de:", max_dd)
+drawdown_g = drawdown * 100
 spy_precios = yf.download("SPY", period="10y")["Close"]["SPY"]
 print(spy_precios.tail())
 spy_log_r = np.log(spy_precios / spy_precios.shift(1))
@@ -40,4 +41,8 @@ plt.figure()
 plt.plot(vol_roll_a * 100)
 plt.ylabel("Volatilidad anual (%)")
 plt.savefig("volatilidad_rolling.png")
+plt.figure()
+plt.plot(drawdown_g)
+plt.ylabel("Drawdown (%)")
+plt.savefig("drawdown_diario.png")
 plt.show()

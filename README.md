@@ -6,15 +6,16 @@ Es una herramienta de Python que analiza el riesgo, la correlación y el retorno
 - Calcula retornos logarítmicos y retorno total
 - Volatilidad anualizada, mensual y diaria
 - Max Drawdown
+- Drowdown diario
 - La correlación con el S&P 500 (SPY)
 - Nos da un histograma de retornos reales vs distribución normal
-- Genera un informe de texto y un gráfico
+- Genera un informe de texto y varios graficos
 - Muestra la volatilidad rolling que muestra como varia el riesgo a lo largo del tiempo con una ventana fija de 20 dias
 
 ## Cómo usarlo
 - Requisitos: Python + las librerías que se usan: numpy, pandas, matplotlib, yfinance
 - Ejecutar: `uv run capstone.py`
-- Genera: `informe.txt`, `histogram.png` y `volatilidad_rolling.png`
+- Genera: `informe.txt`, `histogram.png`, `volatilidad_rolling.png` y `drawdown_diario.png`
 - Para analizar otra acción o período: cambiar el ticker y el `period` en las llamadas a `yf.download`
 
 ## Ejemplo de output (MSFT, 10 años)
@@ -28,6 +29,7 @@ La correlacion con el SPY: 0.7628
 ```
 ![Histograma de retornos vs normal](histogram.png)
 ![Volatilidad rolling analizada(20d)](volatilidad_rolling.png)
+![Drawdown diario](drawdown_diario.png)
 
 ## Nota
 Los retornos reales tienen más eventos extremos de lo que predice la distribución normal. La campana es delgada en las colas, cuando en la realidad es gorda: un evento diario de 5 desvíos debería pasar 1 vez cada +10.000 años, pero en la realidad tiende a ocurrir cada pocos años.
