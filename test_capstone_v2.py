@@ -5,6 +5,10 @@ def test_vol_cero_si_no_hay_dispersion():
     retornos = pd.Series([0.01, 0.01, 0.01, 0.01])
     resultado = calcular_vol(retornos, 252)
     assert resultado == 0
+def test_vol_escalado_anualizado():
+    retornos = pd.Series([0.01, -0.01])
+    resultado = calcular_vol(retornos, 252)
+    assert resultado == pytest.approx(0.224499, abs=1e-5)
 def test_retorno_log_precio_duplicado():
     precios = pd.Series([100, 200])
     resultado = calcular_retorno_log(precios)
