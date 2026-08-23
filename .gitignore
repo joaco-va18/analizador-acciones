@@ -9,3 +9,6 @@ wheels/
 # Virtual environments
 .venv
 analisis.py
+
+# Análisis personal — no subir
+privado/
