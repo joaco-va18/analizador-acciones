@@ -11,4 +11,4 @@ wheels/
 analisis.py
 
 # Análisis personal — no subir
-privado/
+privado/.DS_Store

@@ -1,7 +1,11 @@
 El ticker es: MSFT
 El periodo a evaluar es: 10y
-Volatilidad anual 27.6551%
-Volatilidad rolling actual (20 días): 58.9032%
-Retorno total: 839.5644%
+Volatilidad anual 27.6593%
+Volatilidad rolling actual (20 días): 56.3895%
+Volatilidad rolling(60 dias) 44.048%
+Retorno total: 862.1269%
 Maximo DrawDown: -37.1485%
-La correlacion con el SPY: 0.7625
+La correlacion con el SPY: 0.7624
+El sharpe es: 0.67684
+La asimetria(skew) es: 0.010944
+La curtosis es: 8.92082

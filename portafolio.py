@@ -3,7 +3,7 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 precios = yf.download(["MSFT", "VOO", "BTC-USD", "ACAD", "GLD"], period="10y")["Close"]
 pesos = np.array([0.2, 0.2, 0.2, 0.2, 0.2])
-precios_alineados = precios.dropna()
+precios_alineados = precios.dropna() # .dropna, elimina columnas/filas con NaN
 retornos_log = np.log(precios_alineados / precios_alineados.shift(1))
 covarianza = retornos_log.cov() * 252
 print(covarianza)
